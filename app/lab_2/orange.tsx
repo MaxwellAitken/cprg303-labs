@@ -7,13 +7,13 @@ export default function Orange() {
   return (
     <View style={styles.wrapper}>
 
-        <TouchableOpacity onPress={() => router.push('/')}>
+        <TouchableOpacity onPress={() => router.push('/lab_2')}>
             <MaterialIcons name="clear" size={30} style={styles.icon} />
         </TouchableOpacity>
 
         <View style={styles.container}>
             <Text style={styles.title}>Orange</Text>
-            <Image source={require('../public/Orange.jpg')} style={styles.image}/>
+            <Image source={require('../../public/Orange.jpg')} style={styles.image}/>
         </View>
     </View>
   );

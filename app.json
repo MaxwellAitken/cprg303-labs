@@ -1,7 +1,10 @@
 {
   "expo": {
-    
-    "plugins": [["expo-router"]],
+    "plugins": [
+      [
+        "expo-router"
+      ]
+    ],
     "name": "cprg303lab2",
     "slug": "cprg303lab2",
     "version": "1.0.0",
@@ -21,7 +24,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.anonymous.cprg303lab2"
     },
     "web": {
       "favicon": "./assets/favicon.png"

@@ -2,20 +2,19 @@ import { View, Text, Image, StyleSheet, TouchableOpacity } from "react-native";
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import { useRouter } from 'expo-router';
 
-export default function Apple() {
+export default function Mango() {
     const router = useRouter();
   return (
     <View style={styles.wrapper}>
 
-        <TouchableOpacity onPress={() => router.push('/')}>
+        <TouchableOpacity onPress={() => router.push('/lab_2')}>
             <MaterialIcons name="clear" size={30} style={styles.icon} />
         </TouchableOpacity>
 
         <View style={styles.container}>
-            <Text style={styles.title}>Apple</Text>
-            <Image source={require('../public/Apple.png')} style={styles.image}/>
+            <Text style={styles.title}>Mango</Text>
+            <Image source={require('../../public/mango.jpg')} style={styles.image}/>
         </View>
-        
     </View>
   );
 }
@@ -29,8 +28,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     marginTop: 64,
-    alignItems: "center",
     gap: 32,
+    alignItems: "center",
   },
 
   title: {
