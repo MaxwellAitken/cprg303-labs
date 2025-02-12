@@ -1,10 +1,6 @@
 {
   "expo": {
-    "plugins": [
-      [
-        "expo-router"
-      ]
-    ],
+    "plugins": [["expo-router"]],
     "name": "cprg303lab2",
     "slug": "cprg303lab2",
     "version": "1.0.0",
@@ -12,18 +8,20 @@
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
+    "backgroundColor": "#14181c",
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#14181c"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+        "backgroundColor": "#14181c"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#14181c"
       },
       "package": "com.anonymous.cprg303lab2"
     },

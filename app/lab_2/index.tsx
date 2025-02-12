@@ -1,7 +1,7 @@
-import { StyleSheet, Text, View, Button, TouchableOpacity, SafeAreaView } from 'react-native';
-import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import { useRouter } from 'expo-router';
-import fruits from '../../components/fruits';
+import ExitButton from '../../components/exitButton';
+import fruits from './components/fruits';
 
 export default function Index() {
 
@@ -10,9 +10,7 @@ export default function Index() {
     return (
         <View style={styles.container}>
 
-            <TouchableOpacity style={styles.closeButton} onPress={() => router.push('/')}>
-                <MaterialIcons name="clear" size={30} style={styles.icon} />
-            </TouchableOpacity>
+            <ExitButton route='/' />
 
             <View style={styles.fruitWrapper}>
                 <Text style={{fontSize: 20, fontWeight: 'bold', color: '#e3e3e3'}}>Here are some fruits:</Text>
@@ -36,7 +34,7 @@ const styles = StyleSheet.create({
         gap: 48,
         justifyContent: "center",
         alignItems: "center",
-        backgroundColor: '#1c1f26',
+        backgroundColor: '#14181c',
     },
 
     fruitWrapper: {
@@ -56,16 +54,5 @@ const styles = StyleSheet.create({
         paddingVertical: 4,
         alignItems: 'center',
     },
-    
-    icon: {
-        marginLeft: 16,
-        color: "#999999",
-    },
-
-    closeButton: {
-        position: "absolute",
-        top: 16,
-        left: 16,
-    }
 });
   

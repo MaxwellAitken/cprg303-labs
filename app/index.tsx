@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Button, TouchableOpacity, SafeAreaView } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import { useRouter } from 'expo-router';
 
 export default function Index() {
@@ -8,16 +8,20 @@ export default function Index() {
     return (
         <View style={styles.container}>
 
-            <Text style={{fontSize: 24, fontWeight: 'bold', color: '#e3e3e3'}}>Welcome to Max's ExpoRouter App!</Text>
+            <Text style={styles.title}>Welcome to Max's ExpoRouter App!</Text>
 
             <View style={styles.wrapper}>
                 
                 <TouchableOpacity style={styles.button} onPress={() => router.push("/lab_2")}>
-                    <Text style={{fontSize: 24, color: '#e3e3e3'}}>Lab 2</Text>
+                    <Text style={styles.buttonText}>Lab 2</Text>
                 </TouchableOpacity>
 
                 <TouchableOpacity style={styles.button} onPress={() => router.push("/lab_3")}>
-                    <Text style={{fontSize: 24, color: '#e3e3e3'}}>Lab 3</Text>
+                    <Text style={styles.buttonText}>Lab 3</Text>
+                </TouchableOpacity>
+
+                <TouchableOpacity style={styles.button} onPress={() => router.push("/lab_4")}>
+                    <Text style={styles.buttonText}>Lab 4</Text>
                 </TouchableOpacity>
             </View>
             
@@ -31,7 +35,6 @@ const styles = StyleSheet.create({
         gap: 48,
         justifyContent: "center",
         alignItems: "center",
-        backgroundColor: '#1c1f26',
     },
 
     wrapper: {
@@ -45,7 +48,18 @@ const styles = StyleSheet.create({
         paddingHorizontal: 12,
         paddingVertical: 4,
         alignItems: 'center',
-        backgroundColor: '#39494f',
+        backgroundColor: '#456',
+    },
+
+    title: {
+        fontSize: 24,
+        fontWeight: 'bold',
+        color: '#e3e3e3',
+    },
+
+    buttonText: {
+        fontSize: 24,
+        color: '#e3e3e3',
     }
 });
   
